@@ -1,0 +1,26 @@
+{% include 'header.html' %}
+<html>
+    <head>
+        <title>Weather App</title>
+        <style>
+            body{
+    padding: 0;
+    margin: 0;
+    background-image: url(../static/3.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+        </style>
+    </head>
+    <body>
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>
+<script>
+    $(document).ready(function(){
+        $(".alert").hide(4000);
+    });
+</script>
